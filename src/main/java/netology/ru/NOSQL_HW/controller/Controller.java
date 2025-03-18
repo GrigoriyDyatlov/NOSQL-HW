@@ -1,7 +1,6 @@
 package netology.ru.NOSQL_HW.controller;
 
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import netology.ru.NOSQL_HW.repository.User;
 import netology.ru.NOSQL_HW.service.Service;
 import org.springframework.web.bind.annotation.*;

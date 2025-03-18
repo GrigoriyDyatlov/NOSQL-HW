@@ -1,6 +1,5 @@
 package netology.ru.NOSQL_HW.service;
 
-import lombok.RequiredArgsConstructor;
 import netology.ru.NOSQL_HW.repository.Repository;
 import netology.ru.NOSQL_HW.repository.User;
 
@@ -19,15 +18,15 @@ public class Service {
     }
 
     public User getUser(String id) {
-        return (User) repository.findById(id).orElse(null);
+        return repository.findById(id).orElse(null);
     }
 
     public User addUser(User user) {
-        return (User) repository.save(user);
+        return repository.save(user);
     }
 
     public User updateUser(User user) {
-        return (User) repository.save(user);
+        return repository.save(user);
     }
 
     public void deleteUser(String id) {
