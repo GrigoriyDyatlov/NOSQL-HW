@@ -16,7 +16,7 @@ public class Controller {
         this.service = service;
     }
 
-    @GetMapping
+    @GetMapping("users")
     public List<User> getUsers(User user) {
         return service.getUsers();
     }
